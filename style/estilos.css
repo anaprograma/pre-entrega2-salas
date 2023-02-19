@@ -6,9 +6,7 @@
     text-align: center;
 
 }
-.navbar{
-    background-color:#2C3438;
-}
+
 .collapse{
     justify-content: space-evenly;
 
@@ -93,10 +91,7 @@
 }
 
 /*footer*/
-.container--footer{
-    background-color:#2C3438;
-    padding-top: 2rem;
-}
+
 .footer--horarios, .footer--contactos, .footer--direccion, .footer--copyright{
     font-family: 'Signika', sans-serif;
     font-size: 1.5rem;
@@ -111,9 +106,7 @@
     justify-content: center;
    
 }
-.footer--contactos p{
-    padding-top: 1rem;
-}
+
 .footer--contactos--iconos{
     display: flex;
     flex-direction: row;
@@ -172,7 +165,7 @@
 /*main Galeria*/ 
 .container__galeria{
 
-    background-color: #E5FFE3;
+    
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -183,6 +176,7 @@
 .fila{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .imagen {
@@ -328,9 +322,12 @@ flex-direction: column;
         margin-right: 0.5em;
 
     }
-   
-
-    
+ 
+}
+@media (max-width:360px){
+    .imagen{
+        margin: 0%;
+    }
 }
 
 
