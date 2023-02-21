@@ -1,8 +1,12 @@
 /* ESTILO GENERAL DE BG */
 .bg-general{
-    background: #d9a7c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+
+
 
 }
 
@@ -67,6 +71,7 @@
 .contenedor-img{
     width: 80rem;
     height: 40em;
+   
 }
 
 
@@ -81,6 +86,28 @@
     margin-top: 20px;
     padding-bottom: 3rem;
     
+}
+.contenedor-row{
+    position: relative;
+}
+.imagen-circular{
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.circulo-uno{
+    z-index: 1;
+    left: 30px;
+
+}
+.circulo-dos{
+    z-index: 2;
+    right: 30px;
+    bottom: 50px;
+    
+
 }
 
 
@@ -222,7 +249,7 @@
 }
 .nosotros--main--otraImagen{
 
-    width: 35rem;
+    width: 36rem;
     height: auto;
     border-radius: 10%;
     
@@ -232,12 +259,12 @@
     padding-bottom: 3rem;
 }
 .nosotros--main--texto{
-    margin-top: -15rem;
+    margin-top: -12rem;
     height: 40rem;
-    width: 30rem;
-    border-radius: 5%;
-    box-shadow: 5px 5px 10px;
-    background-color: #B5EAF5;
+    width: 28rem;
+    background-color: white;
+    
+   
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -303,6 +330,17 @@
         margin-top: 5rem;
     }
 }
+@media (max-width:900){
+
+
+    .imagen-circular{
+        
+       display: none;
+    }
+}
+
+
+
 @media (max-width:750px) {
 
     .nosotros--main--otraImagen{
