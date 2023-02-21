@@ -1,3 +1,10 @@
+/* ESTILO GENERAL DE BG */
+.bg-general{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 .nav-link{   
     color: white;
@@ -57,17 +64,23 @@
 }
 
 /*MAIN INDEX*/
+.contenedor-img{
+    width: 80rem;
+    height: 40em;
+}
 
 
 .mainImg{
    
-    width: 80vw;
+    width: 70rem;
     height: 37.5em;
     background-image: url(../imagenes/imagenLocal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 20px;
+    margin-top: 20px;
+    padding-bottom: 3rem;
+    
 }
 
 
@@ -77,7 +90,7 @@
     font-weight: bold;
     text-align: center;
     width: 90%;
-    margin: 3vw;
+    padding-top: 3rem;
    
 
 }
@@ -124,13 +137,7 @@
 
 
 /*mainServicios*/
-.container__servicios{
-    
-    background-color: #E5FFE3
-    
-}
-
-    
+  
 .sectionServicios{
     
     font-family: 'Kalam', cursive;
@@ -163,6 +170,7 @@
 }
 
 /*main Galeria*/ 
+
 .items{
     margin: 0.5rem;
     
@@ -186,7 +194,7 @@
 /*main SOBRE NOSOTROS*/ 
 .nosotros--main{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -208,19 +216,30 @@ flex-direction: column;
 }
 .nosotros--main--imagen{
     padding-top: 10vh;
-    width: 65vw; 
+    width: 55rem; 
     height: auto;
+    border-radius: 10%;
 }
 .nosotros--main--otraImagen{
 
-    width: 35vw;
+    width: 35rem;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10%;
     
 }
 .nosotros--main--texto, .nosotros--main--otraImagen{
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+.nosotros--main--texto{
+    margin-top: -15rem;
+    height: 40rem;
+    width: 30rem;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px;
+    background-color: #B5EAF5;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .sectionNosotros{
@@ -241,28 +260,9 @@ flex-direction: column;
     padding-bottom: 10px;
     color: #AD0569;
 }
-.fotoSecundaria{
-    display: flex;
-    grid-column: 3/6;
-    grid-row: 3/6;
-    height: 800px;
-    width: 800px;
-    align-items: end;
-}
-.imgSobreN{
-    border-radius: 15%;  
-    height: 30em;
-    width: 38em;
-  
-
-}
-/*NOSOTROS GRID*/ 
 
 /*main Contacto*/ 
-.container__Contacto{
-    
-    background-color: #E5FFE3
-}
+
 .pruebaContacto{
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -296,6 +296,11 @@ flex-direction: column;
 @media (max-width:1200px){
     .items-img{
         width: 17rem;
+    }
+}
+@media (max-width:1100px){
+    .nosotros--main--texto{
+        margin-top: 5rem;
     }
 }
 @media (max-width:750px) {
